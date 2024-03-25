@@ -23,7 +23,7 @@ Sau khi đã chọn được cơ sở dữ liệu phù hợp, việc tạo cơ s
 2. **Cài Đặt và Cấu Hình DBMS:** BigQuery là một dịch vụ serverless, không cần phải quản lý hoặc cấu hình các máy chủ. 
 
 3. **Tạo Database và Bảng:** Sử dụng câu lệnh SQL để tạo cơ sở dữ liệu và các bảng cần thiết. Câu lệnh `CREATE DATABASE` sẽ tạo ra cơ sở dữ liệu, sau đó sử dụng câu lệnh `CREATE TABLE` để tạo các bảng và xác định cấu trúc dữ liệu cho mỗi bảng.
-![](1.png)
+![](/CreatDB/1.png)
 
 	**Navtive và External**: Table của dataset gồm 2 loại: Native và External. Native table sẽ import data vào BigQuery và cho phép bạn query từ đó, dung lượng lưu trữ được sử dụng nhưng bù lại cho sự tối ưu về thời gian query. Trong khi đó, data trong các External tables được lưu trên các sources khác như Cloud Storage, Google Sheets,… lúc này BigQuery đọc data trực tiếp từ các sources nên không tốn dung lượng lưu trữ, bù lại thời gian query lâu.
 	
