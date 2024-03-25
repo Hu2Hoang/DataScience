@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Data from Firebase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="top-section">
+        <div id="counts">
+            <div id="unchecked-count">All: 0</div>
+            <div id="error-count">Error: 0</div>
+            <div id="qr-count">Qr: 0</div>
+        </div>
+        <div id="search-box">
+            <!-- your search box here -->
+        </div>
+    </div>
+    
+    <table id="data-table">
+
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>ID</th>
+                
+                <th>Phone</th>
+                <th>TimeStamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here by JavaScript -->
+        </tbody>
+
+    </table>
+    <input type="text" id="search-box" placeholder="Search...">
+    <div id="not-found" style="display: none;">
+        <input type="text" id="name-input" placeholder="Name">
+        <input type="text" id="phone-input" placeholder="Phone">
+        <button id="submit-button">Submit</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
